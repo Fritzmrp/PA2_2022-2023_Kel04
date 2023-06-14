@@ -9,6 +9,8 @@ use App\Http\Controllers\Web\RuanganController;
 use App\Http\Controllers\Web\KritikSaranController;
 use App\Http\Controllers\Web\CartController;
 use App\Http\Controllers\Web\CheckoutController;
+use App\Http\Controllers\Web\PengaduanController;
+use App\Http\Controllers\Web\PengumumanController;
 
 /*
 |--------------------------------------------------------------------------
@@ -55,6 +57,7 @@ Route::get('/daftarmenu/search', [FoodController::class, 'search'])->name('searc
 Route::get('/daftarmenu/filter', [FoodController::class, 'filterMenu']);
 Route::get('ruangan', [RuanganController::class, 'index'])->name('ruangan');
 Route::get('/ruangan/search', [RuanganController::class, 'search'])->name('search');
+Route::get('/pengumuman', [PengumumanController::class, 'index'])->name('pengumuman.pengumuman');
 
 
 Route::get('/', function () {
@@ -70,3 +73,4 @@ Route::get('/authreg', function () {
 Route::resource('booking', BookingController::class);
 
 Route::resource('kritiksaran', KritikSaranController::class);
+Route::resource('pengaduan', PengaduanController::class);

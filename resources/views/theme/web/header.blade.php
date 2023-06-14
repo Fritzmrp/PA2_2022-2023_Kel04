@@ -76,6 +76,7 @@
 									<li class="dropdown"><a href="{{ (url('/')) }}">Home</a></li>
 									<li><a href="{{ url('/ruangan') }}">Room</a></li>
 									<li><a href="{{ url('/daftarmenu') }}">List Menu</a></li>
+									<li><a href="{{ url('/pengumuman') }}">Pengumuman</a></li>
 								</ul>
 							</nav>
 						</div>

@@ -7,6 +7,7 @@ use App\Http\Controllers\Staff\OrderController;
 use App\Http\Controllers\Staff\HomeController;
 use App\Http\Controllers\Staff\BookingController;
 use App\Http\Controllers\Staff\KritikSaranController;
+use App\Http\Controllers\Staff\PengaduanController;
 
 /*
 |--------------------------------------------------------------------------
@@ -23,11 +24,13 @@ Route::group(['domain' => ''], function () {
     Route::prefix('staff/')->name('staff.')->group(function () {
         Route::redirect('/', 'dashboard', 301);
         Route::get('dashboard', [HomeController::class, 'index'])->name('dashboard');
+        Route::get('dashboard', [HomeController::class, 'favorit'])->name('dashboard');
         Route::get('/login', [AuthController::class, 'login'])->name('auth.index');
         Route::get('auth/register', [AuthController::class, 'register'])->name('auth.register');
         Route::get('logout', [AuthController::class, 'do_logout'])->name('logout');
 
         Route::resource('/kritik', KritikSaranController::class);
+        Route::resource('/historypengaduan', PengaduanController::class);
         Route::get('/historykritik/export-pdf', [KritikSaranController::class, 'show'])->name('historykritik.export.pdf');
         Route::get('/historymeja', [BookingController::class, 'index'])->name('history.index');
         Route::delete('/historymeja/{id}/delete', [BookingController::class, 'destroy'])->name('historymeja.destroy');

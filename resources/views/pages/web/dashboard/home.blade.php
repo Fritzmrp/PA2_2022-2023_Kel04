@@ -208,6 +208,46 @@
 						<input class="btn btn-primary" type="submit" value="Kirim Pesan" />
 					</div>
 				</form>
+				<div class="col-sm-12 col-xs-12 commontop text-center">
+					<h4>Pengaduan Makanan & Minuman</h4>
+				</div>
+				<form method="post" enctype="multipart/form-data" action="{{ route('pengaduan.store') }}" class="form-horizontal col-sm-12" onsubmit="return checkLoginStatus()" onsubmit="return validateForm()">
+					@csrf
+					<div class="form-group">
+						<div class="col-sm-12">
+							<i class="icofont icofont-food-cart"></i>
+							<select id="input-category" class="form-control" name="kategori">
+								<option value="">Pilih Kategori</option>
+								<option value="makanan">Makanan</option>
+								<option value="minuman">Minuman</option>
+							</select>
+							@error('kategori')
+								<div class="alert alert-danger" style="color: red;">{{ $message }}</div>
+							@enderror
+						</div>
+					</div>
+					<div class="form-group">
+						<div class="col-sm-12">
+							<i class="icofont icofont-food-menu"></i>
+							<input type="text" class="form-control" name="namamenu" placeholder="Nama Makanan atau Minuman" value="{{ old('namamenu') }}">
+							@error('namamenu')
+								<div class="alert alert-danger" style="color: red;">{{ $message }}</div>
+							@enderror
+						</div>
+					</div>
+					<div class="form-group">
+						<div class="col-sm-12">
+							<i class="icofont icofont-pencil-alt-5"></i>
+							<textarea id="input-enquiry" class="form-control" name="pengaduan" placeholder="Pengaduan">{{ old('pengaduan') }}</textarea>
+							@error('pengaduan')
+								<div class="alert alert-danger" style="color: red;">{{ $message }}</div>
+							@enderror
+						</div>
+					</div>
+					<div class="buttons text-left">
+						<input class="btn btn-primary" type="submit" value="Kirim Pesan" />
+					</div>
+				</form>				
 			</div>
 		</div>
 	</div>

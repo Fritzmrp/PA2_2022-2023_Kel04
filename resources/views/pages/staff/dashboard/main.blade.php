@@ -118,6 +118,37 @@
 							<canvas id="chartD"></canvas>
 						</div>
 					</div>
+					<div class="row fullscreen" style="display: flex; justify-content: center; align-items: center;">
+						<div class="col-sm-12 col-md-12 col-lg-12">
+							<div class="card fullscreen-card">
+								<div class="card-header border-bottom">
+									  <h3 class="card-title">Grafik Menu</h3>
+									  <div class="ms-auto">
+										<div class="btn-group p-0 ms-auto">
+											<button class="btn btn-primary-light btn-sm" type="button">2023</button>
+										</div>
+									  </div>
+								</div>
+								<div class="card-body">
+									<div class="sales-stats d-flex">
+										<div>
+											<div class="text-muted fs-13">Menu favorit {{ $year }}</div>
+											<div class="most-ordered-product" >
+												<h4>Produk Paling Banyak Dibeli</h4>
+												@if ($mostOrderedProduct)
+													<p>Nama Produk: <span style="font-weight: bold;">{{ $mostOrderedProduct->title }}</span></p>
+													<p>Jumlah Pembelian: <span style="font-weight: bold;">{{ $mostOrderedProduct->order_details_count }}</span></p>
+												@else
+													<p>Tidak ada data produk yang tersedia.</p>
+												@endif
+											</div>
+										</div>
+									</div>
+									<canvas id="chartX"></canvas>
+								</div>
+							</div>
+						</div>
+					</div>
             	</div>
         	</div>
     	</div>
@@ -144,6 +175,31 @@
 				beginAtZero: true
 				}
 			}
+			}
+		});
+	</script>
+	<div id="content_detail"></div>
+	<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+	<script>
+		var ctx = document.getElementById('chartX').getContext('2d');
+		var chart = new Chart(ctx, {
+			type: 'bar',
+			data: {
+				labels: {!! $productTitles !!},
+				datasets: [{
+					label: 'Checkout Count',
+					data: {!! $productCheckoutCounts !!},
+					backgroundColor: 'rgba(54, 162, 235, 0.5)',
+					borderColor: 'rgba(54, 162, 235, 1)',
+					borderWidth: 1
+				}]
+			},
+			options: {
+				scales: {
+					y: {
+						beginAtZero: true
+					}
+				}
 			}
 		});
 	</script>

@@ -9,6 +9,8 @@ use App\Http\Controllers\Admin\BookingController;
 use App\Http\Controllers\Admin\ProductController;
 use App\Http\Controllers\Admin\RuanganController;
 use App\Http\Controllers\Admin\KritikSaranController;
+use App\Http\Controllers\Admin\PengaduanController;
+use App\Http\Controllers\Admin\PengumumanController;
 
 /*
 |--------------------------------------------------------------------------
@@ -25,6 +27,7 @@ Route::group(['domain' => ''], function () {
     Route::prefix('admin/')->middleware('auth')->name('admin.')->group(function () {
         Route::redirect('/', 'dashboard', 301);
         Route::get('dashboard', [HomeController::class, 'index'])->name('dashboard');
+        Route::get('dashboard', [HomeController::class, 'favorit'])->name('dashboard');
         Route::get('/login', [AuthController::class, 'login'])->name('auth.index');
         Route::get('auth/register', [AuthController::class, 'register'])->name('auth.register');
         Route::get('logout', [AuthController::class, 'do_logout'])->name('logout');
@@ -32,6 +35,7 @@ Route::group(['domain' => ''], function () {
         Route::resource('/food', ProductController::class);
         Route::resource('/ruangan', RuanganController::class);
         Route::resource('/kritik', KritikSaranController::class);
+        Route::resource('/pengaduan', PengaduanController::class);
         Route::get('/kritik/export-pdf', [KritikSaranController::class, 'show'])->name('kritik.export.pdf');
         Route::get('/history', [BookingController::class, 'index'])->name('history.index');
         Route::delete('/history/{id}/delete', [BookingController::class, 'destroy'])->name('history.destroy');
@@ -47,6 +51,9 @@ Route::group(['domain' => ''], function () {
         Route::put('/historyorder/{id}/accept', [OrderController::class, 'accept'])->name('historyorder.accept');
         Route::put('/historyorder/{id}/reject', [OrderController::class, 'reject'])->name('historyorder.reject');
         Route::put('/historyorder/{id}/finish', [OrderController::class, 'finish'])->name('historyorder.finish');
+
+        Route::get('/pengumuman', [PengumumanController::class, 'index'])->name('pengumuman.index');
+        Route::post('/pengumuman', [PengumumanController::class, 'store'])->name('pengumuman.store');
 
         Route::get('/auth', function () {
             return view('pages.auth.login');
