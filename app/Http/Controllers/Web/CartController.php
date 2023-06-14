@@ -6,6 +6,7 @@ use App\Models\Cart;
 use App\Models\Product;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use App\Models\Rating;
 use Illuminate\Support\Facades\Auth;
 
 class CartController extends Controller
@@ -82,7 +83,20 @@ class CartController extends Controller
             $cart->user_id = Auth::user()->id;
             $cart->product_id = $id;
             $cart->quantity = $request->quantity;
-            $cart->save();  
+            $cart->save(); 
+        }
+        if($request->rating != null){
+            $rating = new Rating();
+            $rating->user_id = Auth::user()->id;
+            $rating->product_id = $id;
+            $rating->rating = $request->rating;
+            $rating->save();
+        }else{
+            $rating = new Rating();
+            $rating->user_id = Auth::user()->id;
+            $rating->product_id = $id;
+            $rating->rating = 0;
+            $rating->save();
         }
         return back()->with('success','Anda Berhasil menambahkan Makanan/Minuman kedalam keranjang');
     }

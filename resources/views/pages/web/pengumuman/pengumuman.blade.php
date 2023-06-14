@@ -1,14 +1,4 @@
 <x-web-layout title="Home">
-    <style>
-        table {
-            border-collapse: collapse;
-            width: 100%;
-        }
-        table th, table td {
-            border: 1px solid #ddd;
-            padding: 8px;
-        }
-    </style>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css">
     <div class="slide">
         <div class="banner">
@@ -18,24 +8,25 @@
             <div class="col-sm-12">
                 <h4>UpSize Coffee</h4>
                 <p>Selamat datang di Coffee Shop kami, tempat yang menyajikan secangkir kebahagiaan dalam setiap tegukan.</p>
-                <button type="button" class="btn-primary" onclick="location.href='{{ url('daftarmenu') }}';">Book Now</button> 
+                <button type="button" class="btn-primary" onclick="location.href='{{ url('daftarmenu') }}';">Book Now</button>
             </div>
-        </div>    
+        </div>
     </div>
     <div class="container">
         <div class="row">
             <div class="col-sm-12 commontop text-center">
                 <h4>Pengumuman Terbaru</h4>
                 @foreach($pengumumans as $item)
-                <li>
+                    <?php echo"===================================================="?>
                     <h3>{{ $item->judul }}</h3>
-                @if ($item->image)
-                    <img src="{{ asset('storage/' . $item->image) }}" alt="Gambar Pengumuman">
-                @endif
+                    @if ($item->image)
+                        <img src="/images/{{ $item->image }}" alt="Gambar Pengumuman" width="500px">
+                    @endif
                     <p>{{ $item->konten }}</p>
-                </li>
+                    <br><br>
                 @endforeach
-                <br><br>
+                <br><br><br><br><br><br>
+                <br><br><br><br><br><br>
             </div>
         </div>
     </div>

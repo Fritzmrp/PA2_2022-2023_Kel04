@@ -36,9 +36,21 @@
                                     <div class="alert alert-warning" role="alert">
                                         Silakan login terlebih dahulu untuk menambahkan ke keranjang.
                                     </div>
-                                @else
+                                @else                            
                                     <form method="POST" action="{{ route('web.cart.add', $product->id) }}">
                                         @csrf
+                                        <div class="container">
+                                            <div class="starrating risingstar d-flex justify-content-center flex-row-reverse">
+                                                <input type="radio" id="star5" name="rating" value="5" /><label for="star5" title="5 star"></label>
+                                                <input type="radio" id="star4" name="rating" value="4" /><label for="star4" title="4 star"></label>
+                                                <input type="radio" id="star3" name="rating" value="3" /><label for="star3" title="3 star"></label>
+                                                <input type="radio" id="star2" name="rating" value="2" /><label for="star2" title="2 star"></label>
+                                                <input type="radio" id="star1" name="rating" value="1" /><label for="star1" title="1 star"></label>
+                                            </div>
+                                            <p class="qty pull-left">
+                                                <span>Rata-Rata Rating Produk Ini : {{ $rating ?? '0' }}</span>
+                                            </p>
+                                        </div>	
                                         <p class="qtypara pull-left">
                                             <input type="text" name="quantity" value="1" size="2" id="input-quantity" class="form-control qty"  style="width: 50px;" />
                                         </p>

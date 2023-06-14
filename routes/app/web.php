@@ -57,7 +57,7 @@ Route::get('/daftarmenu/search', [FoodController::class, 'search'])->name('searc
 Route::get('/daftarmenu/filter', [FoodController::class, 'filterMenu']);
 Route::get('ruangan', [RuanganController::class, 'index'])->name('ruangan');
 Route::get('/ruangan/search', [RuanganController::class, 'search'])->name('search');
-Route::get('/pengumuman', [PengumumanController::class, 'index'])->name('pengumuman.pengumuman');
+Route::get('/pengumuman', [PengumumanController::class, 'index'])->name('pengumuman.index');
 
 
 Route::get('/', function () {

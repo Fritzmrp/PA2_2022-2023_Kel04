@@ -20,10 +20,22 @@ class PengumumanController extends Controller
         $validatedData = $request->validate([
             'judul' => 'required',
             'konten' => 'required',
-            'image' => 'required', 
         ]);
 
-        Pengumuman::create($validatedData);
+        if ($image = $request->file('image')) {
+            $destinationPath = 'images/';
+            $profileImage = date('YmdHis') . "." . $image->getClientOriginalExtension();
+            $image->move($destinationPath, $profileImage);
+            $input['image'] = "$profileImage";
+        }else{
+            unset($input['image']);
+        }
+
+        Pengumuman::create([
+            'judul' => $validatedData['judul'],
+            'konten' => $validatedData['konten'],
+            'image' => $profileImage,
+        ]);
 
         return redirect()->back()->with('success', 'Pengumuman berhasil disimpan.');
     }

@@ -13,7 +13,7 @@
                         <div class="alert alert-success">{{ session('success') }}</div>
                     @endif
                 
-                    <form action="{{ route('admin.pengumuman.store') }}" method="POST">
+                    <form action="{{ route('admin.pengumuman.store') }}" method="POST" enctype="multipart/form-data">
                         @csrf
                         <div class="mb-3">
                             <label for="judul" class="form-label">Judul</label>
@@ -24,7 +24,7 @@
                             <textarea name="konten" id="konten" class="form-control"></textarea>
                         </div>
                         <div class="mb-3">
-                            <label for="judul" class="form-label">Gambar</label>
+                            <label for="image" class="form-label">Gambar</label>
                             <input type="file" name="image" id="image" class="form-control">
                         </div>
                         <button type="submit" class="btn btn-primary">Simpan</button>
@@ -40,13 +40,15 @@
                             <li>
                                 <h3>{{ $item->judul }}</h3>
                                 <p>{{ $item->konten }}</p>
-                                <p>{{ $item->image }}</p>
+                                @if ($item->image)
+                                <p><img src="/images/{{ $item->image }}" alt="" width="100"></p>
+                                @endif
                             </li>   
                         @endforeach
                     </ul>
 					
 				</div>
-			</div>
+			 </div>
 		</div>
     </div>
 

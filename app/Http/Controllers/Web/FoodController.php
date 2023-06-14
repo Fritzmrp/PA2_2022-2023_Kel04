@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Web;
 use App\Models\Product;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use App\Models\Rating;
 
 class FoodController extends Controller
 {
@@ -16,7 +17,8 @@ class FoodController extends Controller
 
     public function detail($id){
         $product = Product::findOrFail($id);
-        return view('pages.web.daftarmenu.menudetail', compact('product'));
+        $rating = Rating::where('product_id', $id)->avg('rating');
+        return view('pages.web.daftarmenu.menudetail', compact('product', 'rating'));
     }
     public function search(Request $request)
     {
