@@ -5,7 +5,7 @@
             <div class="matter">
                 <h2>Registrasi</h2>
                 <ul class="list-inline">
-                    <li><a href="{{ (url('/')) }}">HOME</a></li>
+                    <li><a href="{{ (url('/')) }}">Beranda</a></li>
                     <li><a href="#">Registrasi</a></li>
                 </ul>
             </div>
@@ -28,7 +28,7 @@
                             <hr>
                             <hr>
                             <hr>
-                            <p>Sudah Memiliki Akun? Silahkan Untuk <a href="{{ url('/auth') }}">Login Sekarang</a>
+                            <p>Sudah Memiliki Akun? Silahkan Untuk <a href="{{ url('/auth') }}">Masuk Sekarang</a>
                             <hr>
                             <hr>
                             <hr>

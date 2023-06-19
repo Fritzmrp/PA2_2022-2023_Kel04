@@ -4,19 +4,19 @@
 		<div class="container">
 			<div class="matter">
 				<div class="crumb">
-					<h2>List Menu</h2>
+					<h2>Daftar Menu</h2>
 					<ul class="list-inline">
-						<li><a href="{{ (url('/')) }}">HOME</a></li>
-						<li><a href="{{ url('/daftarmenu') }}">List Menu</a></li>
+						<li><a href="{{ (url('/')) }}">Beranda</a></li>
+						<li><a href="{{ url('/daftarmenu') }}">Daftar Menu</a></li>
 					</ul>
 				</div>
 				<div class="col-sm-6 order col-sm-offset-3">
 					<form action="/daftarmenu/search" class="form-horizontal search-icon" method="GET">
 						<fieldset>
 							<div class="form-group">
-								<input name="search" value="" placeholder="Search keyword" class="form-control" type="search">
+								<input name="search" value="" placeholder="Kata Kunci" class="form-control" type="search">
 							</div>
-							<button type="submit" class="btn"><i class="icofont icofont-search"></i>Search</button>
+							<button type="submit" class="btn"><i class="icofont icofont-search"></i>Penelusuran</button>
 						</fieldset>
 					</form>
 					<br>

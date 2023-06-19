@@ -8,7 +8,7 @@
             <div class="col-sm-12">
                 <h4>UpSize Coffee</h4>
                 <p>Selamat datang di Coffee Shop kami, tempat yang menyajikan secangkir kebahagiaan dalam setiap tegukan.</p>
-                <button type="button" class="btn-primary" onclick="location.href='{{ url('daftarmenu') }}';">Book Now</button>
+                <button type="button" class="btn-primary" onclick="location.href='{{ url('daftarmenu') }}';">Pesan Sekarang</button>
             </div>
         </div>
     </div>

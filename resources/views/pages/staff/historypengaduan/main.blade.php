@@ -9,7 +9,7 @@
                                 <div class="card-header border-bottom d-flex justify-content-between align-items-center">
                                     <h3 class="card-title">Pengaduan</h3>
                                     <div class="ms-auto pageheader-btn">
-                                        <a href=""class="btn btn-primary">Ekspor PDF</a>
+                                        <a href="{{ route('admin.pengaduan.export.pdf') }}"class="btn btn-primary">Ekspor PDF</a>
                                     </div>
                                 </div>  
                                 <div class="ms-auto pageheader-btn">

@@ -9,7 +9,7 @@
                         </div>
                         <div class="ms-auto pageheader-btn">
                             <ol class="breadcrumb">
-                                <li class="breadcrumb-item"><a href="javascript:void(0);">Home</a></li>
+                                <li class="breadcrumb-item"><a href="javascript:void(0);">Beranda</a></li>
                                 <li class="breadcrumb-item active" aria-current="page">Dashboard</li>
                             </ol>
                         </div>
@@ -21,7 +21,7 @@
 									<div class="row">
 										<div class="col">
 											<h3 class="mb-2 fw-semibold">{{ $user }}</h3>
-											<p class="text-muted fs-13 mb-0">Total Users</p>
+											<p class="text-muted fs-13 mb-0">Total User</p>
 											<p class="text-muted mb-0 mt-2 fs-12">
 												<span class="icn-box text-success fw-semibold fs-13 me-1"></span>
 											</p>
@@ -41,7 +41,7 @@
 									<div class="row">
 										<div class="col">
 											<h3 class="mb-2 fw-semibold">{{ $booking }}</h3>
-											<p class="text-muted fs-13 mb-0">Total Booking</p>
+											<p class="text-muted fs-13 mb-0">Total Pemesanan Meja</p>
 											<p class="text-muted mb-0 mt-2 fs-12">
 												<span class="icn-box text-danger fw-semibold fs-13 me-1"></span>
 											</p>
@@ -100,11 +100,8 @@
 						<div class="col-sm-12 col-md-12 col-lg-6 col-xl-8">
 						  	<div class="card fullscreen-card">
 								<div class="card-header border-bottom">	
-							  		<h3 class="card-title">Pendapatan</h3>
+							  		<h3 class="card-title">Pendapatan Dari Pembelian Produk</h3>
 							  		<div class="ms-auto">
-									<div class="btn-group p-0 ms-auto">
-										<button class="btn btn-primary-light btn-sm" type="button">2023</button>
-									</div>
 								</div>
 							</div>
 							<div class="card-body">
@@ -122,11 +119,8 @@
 						<div class="col-sm-12 col-md-12 col-lg-12">
 							<div class="card fullscreen-card">
 								<div class="card-header border-bottom">
-									  <h3 class="card-title">Grafik Menu</h3>
+									  <h3 class="card-title">Grafik Menu Favorit</h3>
 									  <div class="ms-auto">
-										<div class="btn-group p-0 ms-auto">
-											<button class="btn btn-primary-light btn-sm" type="button">2023</button>
-										</div>
 									  </div>
 								</div>
 								<div class="card-body">

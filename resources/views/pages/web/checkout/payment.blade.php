@@ -3,10 +3,10 @@
 		<img src="{{ asset('assets/images/banner_top.jpg') }}" class="img-responsive" alt="banner-top" title="banner-top">
 		<div class="container">
 			<div class="matter">
-				<h2>Shopping Cart</h2>
+				<h2>Keranjang</h2>
 				<ul class="list-inline">
-					<li><a href="{{ (url('/')) }}">HOME</a></li>
-					<li><a href="{{ url('/daftarmenu') }}">Shopping Cart</a></li>
+					<li><a href="{{ (url('/')) }}">Beranda</a></li>
+					<li><a href="{{ url('/daftarmenu') }}">Keranjang</a></li>
 				</ul>
 			</div>
 		</div>
@@ -46,7 +46,7 @@
                                 <span id="nomorRekening"></span>
                             </div>
                             <div class="form-group">
-                                <input class="form-control" id="input-cardnumber" placeholder="Card Number" name="payment" required="" type="text" readonly>
+                                <input class="form-control" id="input-cardnumber" placeholder="Nomor Kartu" name="payment" required="" type="text" readonly>
                             </div>
                             <div class="form-group">
                                 <label for="input-proof">Bukti Pembayaran</label>
@@ -56,7 +56,7 @@
                         
                         <div class="col-md-12 col-sm-12 col-xs-12 padd0">
                             <div class="buttons pull-right">
-                                <button type="submit" class="btn btn-primary">Place Your Order</button>
+                                <button type="submit" class="btn btn-primary">Selesaikan Pesanan</button>
                             </div>
                         </div>
                     </div>

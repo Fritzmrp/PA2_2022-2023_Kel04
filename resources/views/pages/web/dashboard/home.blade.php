@@ -8,7 +8,7 @@
 			<div class="col-sm-12">
 				<h4>UpSize Coffee</h4>
 				<p>Selamat datang di Coffee Shop kami, tempat yang menyajikan secangkir kebahagiaan dalam setiap tegukan.</p>
-				<button type="button" class="btn-primary" onclick="location.href='{{ url('daftarmenu') }}';">Book Now</button> 
+				<button type="button" class="btn-primary" onclick="location.href='{{ url('daftarmenu') }}';">Pesan Sekarang</button> 
 			</div>
 		</div>	
 	</div>
@@ -27,7 +27,7 @@
 		<div class="container">
 			<div class="row ">
 				<div class="col-sm-12 col-xs-12 commontop text-center">
-					<h4>our services</h4>
+					<h4>Layanan Kami</h4>
 					<hr>
 					<p>Kunjungi Coffee Shop kami dan nikmati kesempurnaan kopi dalam suasana yang nyaman dan santai.
 						Kami berjanji bahwa setiap kunjungan Anda akan menjadi pengalaman yang memuaskan dan menggugah selera.</p>
@@ -35,7 +35,7 @@
 				<div class="col-sm-4 col-xs-12">
 					<div class="box text-center">
 						<img src="{{ asset('assets/images/about/icon1.png') }}" class="img-responsive" alt="icon" title="icon" />
-						<h4>Best Chef</h4>
+						<h4>Koki Terbaik</h4>
 						<p>Dilayani oleh tim pelayan kami yang ramah dan berpengalaman, kami berkomitmen untuk menjaga standar kualitas yang tinggi dalam setiap cangkir yang kami sajikan.
 							Kami percaya bahwa kualitas adalah kunci untuk menciptakan pengalaman kopi yang memuaskan dan berkesan.</p>
 					</div>
@@ -43,7 +43,7 @@
 				<div class="col-sm-4 col-xs-12">
 					<div class="box text-center">
 						<img src="{{ asset('assets/images/about/icon2.png') }}" class="img-responsive" alt="icon" title="icon" />
-						<h4>Tables</h4>
+						<h4>Meja</h4>
 						<p>Dalam Coffee Shop kami, setiap meja adalah tempat di mana cerita terbentuk dan hubungan terjalin. Kami berkomitmen untuk menyediakan
 							ruang yang memungkinkan Anda mengambil napas dalam keriuhan kehidupan sehari-hari, sambil menikmati secangkir kopi yang sempurna.</p>
 					</div>
@@ -51,7 +51,7 @@
 				<div class="col-sm-4 col-xs-12">
 					<div class="box text-center">
 						<img src="{{ asset('assets/images/about/icon3.png') }}" class="img-responsive" alt="icon" title="icon" />
-						<h4>Best Seller</h4>
+						<h4>Penjualan Terbaik</h4>
 						<p>Namun, Coffee Shop kami tidak hanya tentang kopi. Kami juga menawarkan berbagai pilihan menu terbaik yang akan memanjakan lidah Anda.
 							Mulai dari Taro frezzee, Matcha frezee, Choco frezzee, Ayam geprek, Nasi goreng yang menggugah selera, 
 							hingga hidangan penutup manis yang memanjakan nafsu Anda. Setiap hidangan kami disiapkan dengan cinta dan 
@@ -61,7 +61,7 @@
 				<div class="col-sm-4 col-xs-12">
 					<div class="box text-center">
 						<img src="{{ asset('assets/images/about/icon4.png') }}" class="img-responsive" alt="icon" title="icon" />
-						<h4>Special Offers</h4>
+						<h4>Penawaran Khusus</h4>
 						<p>Kami selalu mengutamakan kepuasan pelanggan kami, dan penawaran khusus kami dirancang untuk mencerminkan komitmen kami dalam memberikan pengalaman yang luar biasa.
 							Kami terus memperbarui penawaran kami untuk memastikan Anda selalu merasa istimewa setiap kali mengunjungi Coffee Shop kami.</p>
 					</div>
@@ -71,7 +71,7 @@
 				<div class="col-sm-4 col-xs-12">
 					<div class="box text-center">
 						<img src="{{ asset('assets/images/about/icon5.png') }}" class="img-responsive" alt="icon" title="icon" />
-						<h4>Card Payment</h4>
+						<h4>Pembayaran Dengan Kartu</h4>
 						<p>Kami menghargai kenyamanan dan kepuasan pelanggan kami, dan itu termasuk memudahkan proses pembayaran.
 							Dengan layanan pembayaran kartu yang kami sediakan, Anda dapat fokus pada menikmati hidangan dan minuman berkualitas tinggi kami,
 							tanpa harus khawatir tentang transaksi.</p>
@@ -84,14 +84,14 @@
 		<div class="container">
 			<div class="row ">
 				<div class="col-sm-12 col-xs-12 commontop text-center">
-					<h4>Staff</h4>
+					<h4>Karyawan</h4>
 					<hr>
 				</div>
 				<div class="col-sm-3 col-xs-12">
 					<div class="box">
 						<img src="{{ asset('assets/images/about/1.jpg') }}" class="img-responsive" alt="icon" title="icon" />
 						<div class="caption text-center">
-							<h4>OWNER</h4>
+							<h4>Pemilik</h4>
 							<h4>Oswaldz Nababan</h4>
 							<ul class="list-inline social">
 								<li><a href="https://www.facebook.com/" target="_blank"><i class="icofont icofont-social-facebook"></i></a></li>
@@ -105,7 +105,7 @@
 					<div class="box">
 						<img src="{{ asset('assets/images/about/4.jpg') }}" class="img-responsive" alt="icon" title="icon" />
 						<div class="caption text-center">
-							<h4>CASHIER</h4>
+							<h4>Kasir</h4>
 							<h4>Runita Simorangkir</h4>
 							<ul class="list-inline social">
 								<li><a href="https://www.facebook.com/" target="_blank"><i class="icofont icofont-social-facebook"></i></a></li>
@@ -119,7 +119,7 @@
 					<div class="box">
 						<img src="{{ asset('assets/images/about/3.jpg') }}" class="img-responsive" alt="icon" title="icon" />
 						<div class="caption text-center">
-							<h4>CHEF</h4>
+							<h4>Koki</h4>
 							<h4>Ivan Imannuel Pasaribu</h4>
 							<ul class="list-inline social">
 								<li><a href="https://www.facebook.com/" target="_blank"><i class="icofont icofont-social-facebook"></i></a></li>
@@ -133,7 +133,7 @@
 					<div class="box">
 						<img src="{{ asset('assets/images/about/2.jpg') }}" class="img-responsive" alt="icon" title="icon" />
 						<div class="caption text-center">
-							<h4>MANAGER</h4>
+							<h4>Pengelola</h4>
 							<h4>Siti Tampubolon</h4>
 							<ul class="list-inline social">
 								<li><a href="https://www.facebook.com/" target="_blank"><i class="icofont icofont-social-facebook"></i></a></li>
@@ -149,7 +149,7 @@
 					<div class="box">
 						<img src="{{ asset('assets/images/about/4.jpg') }}" class="img-responsive" alt="icon" title="icon" />
 						<div class="caption text-center">
-							<h4>BARISTA</h4>
+							<h4>Peracik Kopi</h4>
 							<h4>Reynaldi Silaban </h4>
 							<ul class="list-inline social">
 								<li><a href="https://www.facebook.com/" target="_blank"><i class="icofont icofont-social-facebook"></i></a></li>
@@ -163,7 +163,7 @@
 					<div class="box">
 						<img src="{{ asset('assets/images/about/4.jpg') }}" class="img-responsive" alt="icon" title="icon" />
 						<div class="caption text-center">
-							<h4>WAITERS</h4>
+							<h4>Pelayan</h4>
 							<h4>Kristamora Simanjuntak</h4>
 							<ul class="list-inline social">
 								<li><a href="https://www.facebook.com/" target="_blank"><i class="icofont icofont-social-facebook"></i></a></li>
@@ -182,7 +182,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-sm-12 col-xs-12 commontop text-center">
-					<h4>Contact Us</h4>
+					<h4>Hubungi Kami</h4>
 					<hr>
 				</div>
 				<div class="col-sm-12 col-xs-12">
@@ -191,14 +191,14 @@
 					</div>
 				</div>
 				<div class="col-sm-12 col-xs-12 commontop text-center">
-					<h4>Critique Suggestion</h4>
+					<h4>Kritik & Saran</h4>
 				</div>
 				<form method="post" enctype="multipart/form-data" action="{{ route('kritiksaran.store') }}" class="form-horizontal col-sm-12" onsubmit="return checkLoginStatus()" onsubmit="return validateForm()">
 					@csrf
 					<div class="form-group">
 						<div class="col-sm-12">
 							<i class="icofont icofont-pencil-alt-5"></i>
-							<textarea id="input-enquiry" class="form-control" name="kritiksaran" placeholder="Message">{{ old('kritiksaran') }}</textarea>
+							<textarea id="input-enquiry" class="form-control" name="kritiksaran" placeholder="Kritik & Saran Cafe UpSize">{{ old('kritiksaran') }}</textarea>
 							@error('kritiksaran')
 								<div class="alert alert-danger" style="color: red;">{{ $message }}</div>
 							@enderror
@@ -222,7 +222,9 @@
 								<option value="minuman">Minuman</option>
 							</select>
 							@error('kategori')
-								<div class="alert alert-danger" style="color: red;">{{ $message }}</div>
+							<div class="alert alert-danger">
+								Silahkan Pilih Kategori Terlebih Dahulu.
+							</div>
 							@enderror
 						</div>
 					</div>
@@ -231,16 +233,20 @@
 							<i class="icofont icofont-food-menu"></i>
 							<input type="text" class="form-control" name="namamenu" placeholder="Nama Makanan atau Minuman" value="{{ old('namamenu') }}">
 							@error('namamenu')
-								<div class="alert alert-danger" style="color: red;">{{ $message }}</div>
+							<div class="alert alert-danger">
+								Silahkan Isi Nama Produk Terlebih Dahulu.
+							</div>
 							@enderror
 						</div>
 					</div>
 					<div class="form-group">
 						<div class="col-sm-12">
 							<i class="icofont icofont-pencil-alt-5"></i>
-							<textarea id="input-enquiry" class="form-control" name="pengaduan" placeholder="Pengaduan">{{ old('pengaduan') }}</textarea>
+							<textarea id="input-enquiry" class="form-control" name="pengaduan" placeholder="Pengaduan Produk">{{ old('pengaduan') }}</textarea>
 							@error('pengaduan')
-								<div class="alert alert-danger" style="color: red;">{{ $message }}</div>
+							<div class="alert alert-danger">
+								Silahkan Pengaduan Anda Terlebih Dahulu.
+							</div>
 							@enderror
 						</div>
 					</div>

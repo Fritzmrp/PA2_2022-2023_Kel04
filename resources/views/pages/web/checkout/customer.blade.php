@@ -3,10 +3,10 @@
 		<img src="{{ asset('assets/images/banner_top.jpg') }}" class="img-responsive" alt="banner-top" title="banner-top">
 		<div class="container">
 			<div class="matter">
-				<h2>Shopping Cart</h2>
+				<h2>Keranjang</h2>
 				<ul class="list-inline">
-					<li><a href="{{ (url('/')) }}">HOME</a></li>
-					<li><a href="{{ url('/daftarmenu') }}">Shopping Cart</a></li>
+					<li><a href="{{ (url('/')) }}">Beranda</a></li>
+					<li><a href="{{ url('/daftarmenu') }}">Keranjang</a></li>
 				</ul>
 			</div>
 		</div>
@@ -18,7 +18,7 @@
                     @csrf
                     <div class="tab-pane col-md-12 col-sm-12 col-xs-12" id="tab-info">
                         <div class="col-md-5 col-sm-5 col-xs-12 padd0">
-                            <h6>Contact Information</h6>
+                            <h6>Informasi Kontak</h6>
                             <fieldset>
                                 <!-- Form input fields for shopping address -->
                                 <div class="form-group">
@@ -34,11 +34,11 @@
                         </div>
                         <div class="col-md-2 col-sm-2 co-xs-12"></div>
                         <div class="col-md-5 col-sm-5 col-xs-12 padd0">
-                            <h6>Shopping Address</h6>
+                            <h6>Alamat</h6>
                                 <fieldset>	
                                     <div class="form-group">
                                         <select name="city" id="input-city" class="form-control">
-                                            <option value="" disabled selected>Select City</option>
+                                            <option value="" disabled selected>Pilih Kota</option>
                                             <option value="Balige">Balige</option>
                                             <option value="Sitoluama">Sitoluama</option>
                                             <option value="Sigumpar">Sigumpar</option>
@@ -46,7 +46,6 @@
                                             <option value="Laguboti">Laguboti</option>
                                             <option value="Porsea">Porsea</option>
                                         </select>
-                                        {{-- <input name="city" value="{{ Auth::user()->city }}" placeholder="City" id="input-city" class="form-control" type="text"> --}}
                                     </div>
                                     <div class="form-group">
                                         <input name="address" value="{{ Auth::user()->address }}" placeholder="Input Alamat Lengkap" id="input-address" class="form-control" type="text">
@@ -55,7 +54,7 @@
                         </div>
                         <div class="col-md-12 col-sm-12 col-xs-12 padd0">
                             <div class="buttons pull-right">
-                            <button  type="submit" class="btn btn-primary">Payment Method</button>
+                            <button  type="submit" class="btn btn-primary">Metode Pembayaran</button>
                             </div>
                         </div>
                     </div>

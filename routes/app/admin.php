@@ -1,6 +1,5 @@
 <?php
 
-use App\Models\Product;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\Admin\HomeController;
@@ -35,8 +34,9 @@ Route::group(['domain' => ''], function () {
         Route::resource('/food', ProductController::class);
         Route::resource('/ruangan', RuanganController::class);
         Route::resource('/kritik', KritikSaranController::class);
-        Route::resource('/pengaduan', PengaduanController::class);
         Route::get('/kritik/export-pdf', [KritikSaranController::class, 'show'])->name('kritik.export.pdf');
+        Route::resource('/pengaduan', PengaduanController::class);
+        Route::get('/pengaduan/export-pdf', [PengaduanController::class, 'show'])->name('pengaduan.export.pdf');
         Route::get('/history', [BookingController::class, 'index'])->name('history.index');
         Route::delete('/history/{id}/delete', [BookingController::class, 'destroy'])->name('history.destroy');
         Route::put('/history/{id}/accept', [BookingController::class, 'accept'])->name('history.accept');

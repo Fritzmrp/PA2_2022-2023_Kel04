@@ -3,19 +3,19 @@
 		<img src="{{ asset('assets/images/banner_top.jpg') }}" class="img-responsive" alt="banner-top" title="banner-top">
 		<div class="container">
 			<div class="matter">
-				<h2>Reservation</h2>
+				<h2>Pemesanan</h2>
 				<ul class="list-inline">
-					<li><a href="{{ (url('/')) }}">HOME</a></li>
-					<li><a href="{{ url('/ruangan') }}">Form Reservation</a></li>
+					<li><a href="{{ (url('/')) }}">Beranda</a></li>
+					<li><a href="{{ url('/ruangan') }}">Formulir Pemesanan</a></li>
 				</ul>
-			</div>
+			</div> 
 		</div>
 	</div>
 	<div class="reserved mar-b">
 		<div class="container">
 			<div class="row ">
 				<div class="col-sm-12 commontop text-center">
-					<h4>Form Reservation</h4>
+					<h4>Formulir Pemesanan</h4>
 					<hr>
 					<p>Kami siap membantu Anda dalam mengatur setiap detail reservasi, mulai dari pemilihan menu makanan dan minuman yang sesuai dengan selera Anda,
 						hingga penyesuaian ruangan sesuai dengan jumlah tamu dan kebutuhan teknis Anda. Tim kami akan bekerja sama dengan Anda untuk memastikan
@@ -44,7 +44,7 @@
 						<div class="form-group">
 							<i class="fa fa-key"></i>							
 							<select class="selectpicker form-control bs-select-hidden" name="meja_id">
-								<option selected="" disabled>Table Number</option>
+								<option selected="" disabled>Nomor Meja</option>
 								@foreach ($meja as $item)
 									<option value="{{ $item->id }}">{{ $item->meja }}</option>
 								@endforeach
@@ -57,7 +57,7 @@
 						</div>
 						<div class="form-group">
 							<i class="icofont icofont-ui-message"></i>
-							<textarea class="form-control" id="message" name="description" placeholder="Message"></textarea>
+							<textarea class="form-control" id="message" name="description" placeholder="Deskripsi"></textarea>
 							@error('description')
 								<div class="alert alert-danger">
 									Silahkan untuk melakukan pengisian description terlebih dahulu.
@@ -65,9 +65,9 @@
 							@enderror
 						</div>
 						@if (Auth::check()) <!-- Menambahkan kondisi jika sudah login -->
-							<button type="submit" class="btn-primary">Book Now</button>
+							<button type="submit" class="btn-primary">Pesan Sekarang</button>
 						@else
-							<button type="button" class="btn-primary" onclick="showLoginAlert()">Book Now</button>
+							<button type="button" class="btn-primary" onclick="showLoginAlert()">Pesan Sekarang</button>
 						@endif
 					</form>
 

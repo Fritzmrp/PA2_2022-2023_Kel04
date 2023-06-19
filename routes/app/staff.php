@@ -1,6 +1,5 @@
 <?php
 
-use App\Models\Product;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\Staff\OrderController;
@@ -30,8 +29,9 @@ Route::group(['domain' => ''], function () {
         Route::get('logout', [AuthController::class, 'do_logout'])->name('logout');
 
         Route::resource('/kritik', KritikSaranController::class);
-        Route::resource('/historypengaduan', PengaduanController::class);
         Route::get('/historykritik/export-pdf', [KritikSaranController::class, 'show'])->name('historykritik.export.pdf');
+        Route::resource('/historypengaduan', PengaduanController::class);
+        Route::get('/historypengaduan/export-pdf', [PengaduanController::class, 'show'])->name('historypengaduan.export.pdf');
         Route::get('/historymeja', [BookingController::class, 'index'])->name('history.index');
         Route::delete('/historymeja/{id}/delete', [BookingController::class, 'destroy'])->name('historymeja.destroy');
         Route::put('/historymeja/{id}/accept', [BookingController::class, 'accept'])->name('historymeja.accept');

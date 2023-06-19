@@ -3,10 +3,10 @@
 		<img src="{{ asset('assets/images/banner_top.jpg') }}" class="img-responsive" alt="banner-top" title="banner-top">
 		<div class="container">
 			<div class="matter">
-				<h2>Shopping Cart</h2>
+				<h2>Keranjang</h2>
 				<ul class="list-inline">
-					<li><a href="{{ (url('/')) }}">HOME</a></li>
-					<li><a href="{{ url('/daftarmenu') }}">Shopping Cart</a></li>
+					<li><a href="{{ (url('/')) }}">Beranda</a></li>
+					<li><a href="{{ url('/daftarmenu') }}">Keranjang</a></li>
 				</ul>
 			</div>
 		</div>

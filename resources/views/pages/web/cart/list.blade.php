@@ -9,10 +9,10 @@
                             <table class="table  table-bordered">
                                 <thead>
                                     <tr>
-                                        <td class="text-center">Name</td>
-                                        <td class="text-center">Price</td>
-                                        <td class="text-center">Qty.</td>
-                                        <td class="text-center">Total</td>
+                                        <td class="text-center">Nama Produk</td>
+                                        <td class="text-center">Harga</td>
+                                        <td class="text-center">Jumlah Pesanan</td>
+                                        <td class="text-center">Total Harga</td>
                                         <td></td>
                                     </tr>
                                 </thead>
@@ -67,9 +67,9 @@
                             @endforeach
                             <tr>
                                 <td colspan="5">
-                                    <h3 class="text-right" id="subtotal">SUBTOTAL - $0.00</h3>
+                                    <h3 class="text-right" id="subtotal">TOTAL - $0.00</h3>
                                     <div class="buttons pull-right">
-                                        <a href="{{ route('web.checkout.customer') }}" class="btn btn-primary">Checkout</a>
+                                        <a href="{{ route('web.checkout.customer') }}" class="btn btn-primary">Pesan</a>
                                     </div>
                                 </td>
                             </tr> 
@@ -82,7 +82,7 @@
                                         subtotal += parseFloat(priceElement.textContent);
                                     });
                                     
-                                    document.getElementById('subtotal').textContent = "SUBTOTAL - Rp." + subtotal.toFixed(2);
+                                    document.getElementById('subtotal').textContent = "SUBTOTAL : Rp." + subtotal.toFixed(2);
                                 }
                                 
                                 calculateTotal();

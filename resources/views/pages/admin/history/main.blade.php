@@ -1,4 +1,4 @@
-<x-app-layout title="Kritik&Saran">
+<x-app-layout title="HistoryMeja">
     <div id="content_list">
         <div class="app-content main-content mt-4">
             <div class="side-app">

@@ -30,10 +30,10 @@
     <img src="{{ asset('assets/images/banner_top.jpg') }}" class="img-responsive" alt="banner-top" title="banner-top">
     <div class="container">
       <div class="matter">
-        <h2>Reservation</h2>
+        <h2>Pemesanan</h2>
         <ul class="list-inline">
-          <li><a href="{{ (url('/')) }}">HOME</a></li>
-          <li><a href="{{ url('/ruangan') }}">Room Reservation</a></li>
+          <li><a href="{{ (url('/')) }}">Beranda</a></li>
+          <li><a href="{{ url('/ruangan') }}">Pemesanan Meja</a></li>
         </ul>
       </div>
     </div>
@@ -42,7 +42,7 @@
     <div class="container">
       <div class="row ">
         <div class="col-sm-12 commontop text-center">
-          <h4>Room Reservation</h4>
+          <h4>Pemesanan Meja</h4>
           <hr>
           <p>Anda dapat memesan ruangan kami dengan mudah melalui pemesanan online atau melalui tim pelayanan kami yang ramah.
             Kami menyediakan pilihan ruangan yang nyaman dan dilengkapi dengan fasilitas modern, seperti meja rapat, layar proyektor,
@@ -52,9 +52,9 @@
           <form action="/ruangan/search" class="form-horizontal search-icon" method="GET">
               <fieldset>
                   <div class="form-group">
-                      <input name="search" value="{{ request('search') }}" placeholder="Search keyword" class="form-control" type="search">
+                      <input name="search" value="{{ request('search') }}" placeholder="Kata Kunci" class="form-control" type="search">
                   </div>
-                  <button type="submit" class="btn">Search</button>
+                  <button type="submit" class="btn">Penelusuran</button>
               </fieldset>
           </form>
           <br>
@@ -66,15 +66,15 @@
         </div>      
         <div class="blog-area full-blog blog-standard full-blog grid-colum default-padding col-md-12">
           <div class="reservation-button justify-content-end"> 
-            <button type="button" class="btn-primary" onclick="location.href='{{ url('/booking/create') }}';">Reservation</button> 
+            <button type="button" class="btn-primary" onclick="location.href='{{ url('/booking/create') }}';">Pemesanan</button> 
           </div>
           <table>
             <tr>
               <th>No</th>
-              <th>Image</th>
-              <th>Table Number</th>
-              <th>Description</th>
-              <th>Table Status</th>
+              <th>Gambar</th>
+              <th>Nomor Meja</th>
+              <th>Deskripsi</th>
+              <th>Status Meja</th>
             </tr>
             @foreach($meja as $item)
             <tr>

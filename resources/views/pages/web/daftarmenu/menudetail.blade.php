@@ -4,10 +4,10 @@
         <div class="container">
             <div class="matter">
                 <div class="crumb">
-                    <h2>List Menu</h2>
+                    <h2>Daftar Menu</h2>
                     <ul class="list-inline">
-                        <li><a href="{{ (url('/')) }}">HOME</a></li>
-                        <li><a href="{{ url('/daftarmenu') }}">List Menu</a></li>
+                        <li><a href="{{ (url('/')) }}">Beranda</a></li>
+                        <li><a href="{{ url('/daftarmenu') }}">Daftar Menu</a></li>
                     </ul>
                 </div>
                 <div class="col-sm-6 order col-sm-offset-3">
@@ -55,8 +55,8 @@
                                             <input type="text" name="quantity" value="1" size="2" id="input-quantity" class="form-control qty"  style="width: 50px;" />
                                         </p>
                                         <div class="buttons">
-                                            <button type="button" class="btn-primary" onclick="location.href='{{ url('/daftarmenu') }}';">Back</button>
-                                            <button type="submit" class="btn-primary">Add To Cart</button>
+                                            <button type="button" class="btn-primary" onclick="location.href='{{ url('/daftarmenu') }}';">Kembali</button>
+                                            <button type="submit" class="btn-primary">Keranjang</button>
                                         </div>
                                     </form>
                                 @endif

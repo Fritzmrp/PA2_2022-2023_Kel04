@@ -25,15 +25,15 @@ class PengaduanController extends Controller
         return view('pages.admin.pengaduan.main', ['pengaduan' => $pengaduan]);
     }
 
-    // public function show()
-    // {
+    public function show()
+    {
 
-    //     $kritik = KritikSaran::all(); // Ganti dengan model dan query yang sesuai dengan data history meja Anda
+        $pengaduan = Pengaduan::all(); // Ganti dengan model dan query yang sesuai dengan data history meja Anda
 
-    //     $pdf = PDF::loadView('pages.admin.kritik.pdf', compact('kritik'));
+        $pdf = PDF::loadView('pages.admin.pengaduan.pdf', compact('pengaduan'));
 
-    //     return $pdf->download('history_kritik.pdf');
-    // }
+        return $pdf->download('history_pengaduan.pdf');
+    }
 
     public function destroy($id)
     {

@@ -2,7 +2,7 @@
 	<div class="container">
 		<div class="row inner">
 			<div class="col-sm-6">
-				<h5>Working Time</h5>
+				<h5>Waktu Kerja</h5>
 				<ul class="list-unstyled">
 					<li>Senin,10.00–23.00</li>
 					<li>Selasa,10.00–23.00</li>
@@ -14,7 +14,7 @@
 				</ul>
 			</div>
 			<div class="col-sm-5">
-				<h5>Information</h5>
+				<h5>Informasi</h5>
 				<ul class="list-unstyled contact">
 					<li><a href="#"><i class="icofont icofont-social-google-map"></i> Jl. Porsea, Jl. Balige, Sigumpar Dangsina, Kec. Sigumpar, Toba, Sumatera Utara 22381</a></li>
 					<li><a href="https://wa.me/6282277592764"><i class="icofont icofont-phone"></i>0822 7759 2764</a></li>

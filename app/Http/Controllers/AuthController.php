@@ -100,19 +100,3 @@ class AuthController extends Controller
         return redirect('auth')->with('success', 'Anda Telah Berhasil Logout');
     }
 }
-        //     $request->session()->regenerate();
-        //     return redirect()->intended('admin/dashboard');
-        // }
-        // if (Auth::attempt(['role' => 'staff', 'email' => $request->email, 'password' => $request->password])) {
-        //     $request->session()->regenerate();
-        //     return redirect()->intended('admin/dashboard');
-        // }
-        // if (Auth::attempt(['role' => 3, 'email' => $request->email, 'password' => $request->password])) {
-        //     $request->session()->regenerate();
-        //     return redirect()->intended('/');
-        // }
-        // if (Auth::attempt(['role' => 4, 'email' => $request->email, 'password' => $request->password])) {
-        //     $request->session()->regenerate();
-        //     return redirect()->intended('/');
-        // }
-    // }

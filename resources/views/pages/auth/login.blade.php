@@ -4,10 +4,10 @@
 		<img src="{{ asset('assets/images/banner_top.jpg') }}" class="img-responsive" alt="banner-top" title="banner-top">
 		<div class="container">
 			<div class="matter">
-				<h2>sign in</h2>
+				<h2>Masuk</h2>
 				<ul class="list-inline">
-					<li><a href="{{ (url('/')) }}">HOME</a></li>
-					<li><a href="#">Login</a></li>
+					<li><a href="{{ (url('/')) }}">Beranda</a></li>
+					<li><a href="#">Masuk</a></li>
 				</ul>
 			</div>
 		</div>
@@ -20,7 +20,7 @@
 						<div class="leftside"></div>
 						<div class="loginto">
 							<div class="commontop text-center">
-								<h4>Login</h4>
+								<h4>Masuk</h4>
 								<hr>
 							</div>
 							<hr>
@@ -29,7 +29,7 @@
 							<hr>
 							<hr>
 							<hr>
-							<p>Belum Memiliki Akun? Silahkan Membuat Akun Anda Dengan <a href=<li><a href="{{ url('/authreg') }}">Register Sekarang</a>
+							<p>Belum Memiliki Akun? Silahkan Membuat Akun Anda Dengan <a href=<li><a href="{{ url('/authreg') }}">Registrasi Sekarang</a>
 							<hr>
 							<hr>
 							<hr>
